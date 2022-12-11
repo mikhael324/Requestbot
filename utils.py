@@ -387,7 +387,7 @@ async def get_shortlink(link):
 
         link = link.replace("http", https)
 
-    url = f'https://beingtek.com/api'
+    url = f'https://rocklinks.net/api'
 
     params = {'api': URL_SHORTNER_WEBSITE_API,
 
