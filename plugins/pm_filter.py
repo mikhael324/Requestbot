@@ -725,9 +725,9 @@ async def auto_filter(client, msg, spoll=False):
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
         dll=await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(60)
-        fll=await dll.edit_text(f"<b>🗑️ Filter Deleted After 1 Min ‼️ \n 🔍Search Again !!</b>")
-        await asyncio.sleep(60)
+        await asyncio.sleep(120)
+        fll=await dll.edit_text(f"<b>🗑️ Filter Deleted After 2 Min ‼️ \n 🔍Search Again !!</b>")
+        await asyncio.sleep(120)
         await fll.delete()
         await message.delete()
     if spoll:
