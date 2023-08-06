@@ -43,6 +43,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mvm_links')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mvm_links')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
